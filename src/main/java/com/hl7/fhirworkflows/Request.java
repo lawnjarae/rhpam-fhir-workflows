@@ -6,12 +6,33 @@ package com.hl7.fhirworkflows;
 
 public class Request implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Request() {
-    }
+	private java.lang.String resourceType;
+	private java.lang.String status;
 
+	public Request() {
+	}
 
+	public java.lang.String getResourceType() {
+		return this.resourceType;
+	}
 
+	public void setResourceType(java.lang.String resourceType) {
+		this.resourceType = resourceType;
+	}
+
+	public java.lang.String getStatus() {
+		return this.status;
+	}
+
+	public void setStatus(java.lang.String status) {
+		this.status = status;
+	}
+
+	public Request(java.lang.String resourceType, java.lang.String status) {
+		this.resourceType = resourceType;
+		this.status = status;
+	}
 
 }
